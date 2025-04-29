@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <span>Food</span>man
+        </div>
+        <ul>
+             <li><a href="#hero">Home</a></li>
+             <li><a href="#special-dish-section">Special</a></li>
+             <li><a href="#chef-section">Chef</a></li>
+             <li><a href="#client-testimonials">Clients</a></li>
+             <li><a href="#footer-container">Contact Us</a></li>
+        </ul>
+        <div style="background-color: #ff8c00; border-radius: 50%; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+            </svg>
+        </div>
+    </div>
+    <!-- hero-section -->
+    <section id="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Meet, Eat & <span class="highlight">Enjoy The True Taste.</span></h1>
+          <p class="hero-subtitle">Discover the true essence of culinary delight as you meet, eat, and savor the authentic flavors that define our passion for food.</p>
+          <button class="hero-button">Get Started</button>
+        </div>
+        <div class="hero-image">
+          <img src="image/hero1.png" alt="Grass-fed Beef Taco Hash">
+        </div>
+      </section>
+
+      <!--food-section -->
+      <section id="special-dish-section">
+        <h2>Our Special Dish</h2>
+        <p class="section-description">Each dish promises an unforgettable dining experience, blending innovation with tradition to delight your senses.</p>
+        <div class="dish-container">
+          <div class="dish-card">
+            <img src="image/curry.png" alt="Veg Curry">
+            <h3>Veg Curry</h3>
+            <p class="dish-description">Diced simmered in aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans for a hearty, flavorful dish.</p>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="price-button">
+              <span class="price">$12.50</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+      
+          <div class="dish-card">
+            <img src="image/stirfry.png" alt="Veg Stir-Fry">
+            <h3>Veg Stir-Fry</h3>
+            <p class="dish-description">Tender strips wok-tossed with a colorful array of fresh vegetables in a flavorful blend of spices and sauces.</p>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">☆</span>
+            </div>
+            <div class="price-button">
+              <span class="price">$18.50</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+      
+          <div class="dish-card">
+            <img src="image/pasta.png" alt="Veg Pasta">
+            <h3>Veg Pasta</h3>
+            <p class="dish-description">Al dente pasta tossed with strips and a mix of vibrant vegetables in a creamy garlic herb sauce, offering a delightful pasta experience.</p>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">☆</span>
+            </div>
+            <div class="price-button">
+              <span class="price">$15.50</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- healthy-food section -->
+      <section class="healthy-food-section">
+        <div class="food-image-container">
+          <img src="image/mix.png">
+        </div>
+        <div class="food-content">
+          <h2>We Serve Healthy & Tasty Food</h2>
+          <p>Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore a menu curated to balance taste and nutrition, ensuring every bite is both satisfying and nourishing.</p>
+          <button class="explore-button">Explore Story</button>
+        </div>
+      </section>
+
+      <!-- food-ordering section -->
+      <section class="section__container banner__container">
+        <div class="banner__card">
+          <span class="banner__icon icon-order"><i class="ri-restaurant-fill"></i></span>
+          <h4>Order Your Food</h4>
+          <p>
+            Seamlessly place your food orders online with just a few clicks. Enjoy
+            convenience and efficiency as you select from our diverse menu of
+            delectable dishes.
+          </p>
+          <a href="#">
+            Read more
+            <span><i class="ri-arrow-right-line"></i></span>
+          </a>
+        </div>
+        <div class="banner__card">
+          <span class="banner__icon icon-pick"><i class="ri-truck-fill"></i></span>
+          <h4>Pick Your Food</h4>
+          <p>
+            Customize your dining experience by choosing from a tantalizing array
+            of options. For savory, sweet, or in between craving, find the perfect
+            meal to satisfy your appetite.
+          </p>
+          <a href="#">
+            Read more
+            <span><i class="ri-arrow-right-line"></i></span>
+          </a>
+        </div>
+        <div class="banner__card">
+          <span class="banner__icon icon-enjoy"><i class="ri-star-smile-fill"></i></span>
+          <h4>Enjoy Your Food</h4>
+          <p>
+            Sit back, relax, and savor the flavors as your meticulously prepared
+            meal arrives. Delight in the deliciousness of every bite, knowing that
+            your satisfaction is our top priority.
+          </p>
+          <a href="#">
+            Read more
+            <span><i class="ri-arrow-right-line"></i></span>
+          </a>
+        </div>
+      </section>
+    <!-- chief-section -->
+    <section id="chef-section">
+      <div class="chef-content">
+        <h2>Cooked By The Best Chefs <br>In The World</h2>
+        <p>Experience culinary excellence crafted by master chefs from around the globe. Our team of culinary virtuosos brings together expertise, innovation, and passion to create unforgettable dining experiences that redefine gastronomy.</p>
+        <ul class="chef-features">
+          <li><span class="icon green">✔</span> Savour culinary brilliance from master chefs worldwide.</li>
+          <li><span class="icon red">✔</span> Experience innovative creations with attention to detail.</li>
+          <li><span class="icon blue">✔</span> Enjoy dishes crafted with an unwavering passion for perfection.</li>
+        </ul>
+      </div>
+      <div class="chef-image-container">
+        <div class="chef-circle">
+          <img src="image/chef.png" alt="Chef" class="chef-image" />
+        </div>
+      </div>
+      <img src="image/spices.png" alt="Spices" class="spices-decor">
+    </section>
+
+    <!--client-section-->
+    <section id="client-testimonials">
+      <h2>What Our Customers Are Saying</h2>
+      <p class="section-description">
+        Discover firsthand experiences and testimonials from our valued patrons.
+        Explore the feedback and reviews that showcase our commitment to
+        quality, service, and customer satisfaction.
+      </p>
+    
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              FoodMan's culinary expertise never fails to impress! Every dish is a masterpiece,
+              bursting with flavor and freshness.
+            </p>
+            <div class="customer-info">
+              <img src="image/client-1.jpg" alt="David Lee" class="customer-avatar">
+              <div class="customer-details">
+                <strong class="customer-name">David Lee</strong>
+                <span class="customer-title">Business Executive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              The service at FoodMan is exceptional. The staff is attentive and makes you
+              feel truly valued. And the food? Absolutely delicious!
+            </p>
+            <div class="customer-info">
+              <img src="image/client-2.jpg" alt="Sarah Miller" class="customer-avatar">
+              <div class="customer-details">
+                <strong class="customer-name">Sarah Miller</strong>
+                <span class="customer-title">Marketing Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              I highly recommend FoodMan for any occasion. Their menu offers a fantastic
+              variety, and the quality is consistently outstanding.
+            </p>
+            <div class="customer-info">
+              <img src="image/client-3.jpg" alt="John Davis" class="customer-avatar">
+              <div class="customer-details">
+                <strong class="customer-name">John Davis</strong>
+                <span class="customer-title">Software Engineer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="slider-navigation">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+    </section>
+    <!--footer-section-->
+    <footer>
+      <div id="footer-container">
+        <div class="footer-col company-info">
+          <h3 class="logo"><span style="color: #ff9800;">Food</span>man</h3>
+          <p>
+            Embark on a gastronomic journey with FoodMan, where every bite tells a story and every dish is crafted to perfection.
+          </p>
+        </div>
+        <div class="footer-col product">
+          <h3>Product</h3>
+          <ul class="footer-links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Meal Deals</a></li>
+            <li><a href="#">Catering Options</a></li>
+            <li><a href="#">Seasonal Offerings</a></li>
+          </ul>
+        </div>
+        <div class="footer-col information">
+          <h3>Information</h3>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Nutrition Information</a></li>
+            <li><a href="#">Allergen Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-col company">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        Copyright © 2024. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="food.js"></script>
+</body>
+</html>

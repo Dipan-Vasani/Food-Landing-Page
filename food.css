@@ -1,0 +1,683 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  10px 20px;
+    background-color: #fffefe;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-logo {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.navbar-logo span:first-child {
+    color: #ff8c00; 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.navbar ul li {
+    margin-left: 15px; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000; 
+    font-size: 16px; 
+}
+
+.navbar ul li a:hover{
+    color: #ff8c00;
+}
+
+.navbar > div:last-child {
+    background-color: #ff8c00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar > div:last-child svg {
+    width: 18px; /* Adjust SVG size */
+    height: 18px;
+    fill: #fff; /* White color for the cart icon */
+}
+
+/*hero-section*/
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #fffcfc;
+}
+
+.hero-content{
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-title {
+    font-size: 3em; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #333; /* Adjust text color */
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.highlight {
+    color: #ff8c00; /* Highlight color */
+  }
+
+  .hero-subtitle {
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #252424; /* Adjust text color */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.hero-button {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e48510; /* Darker shade on hover */ 
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%; /* Adjust maximum width of the image */
+  }
+  
+  .hero-image img {
+    width: 95%;
+    height: auto;
+  }
+  
+/* menu-section */
+#special-dish-section {
+    text-align: center;
+    padding: 40px 20px; /* Adjust padding as needed */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .special-dish-section h2 {
+    font-size: 3em; /* Adjust font size */
+    margin-bottom: 10px;
+    color: #202020; /* Adjust color */
+  }
+  
+  .special-dish-section .section-description {
+    color: #777; /* Adjust color */
+    margin-bottom: 30px;
+  }
+  
+  .dish-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between dish cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  }
+  
+  .dish-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Adjust card width */
+    text-align: center;
+  }
+  
+  .dish-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .dish-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .dish-card .dish-description {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .dish-card .rating {
+    color: gold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .dish-card .price-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dish-card .price {
+    font-weight: bold;
+    color: #e44d26; /* Example price color */
+  }
+  
+  .dish-card .add-to-cart {
+    background-color: #ff8c00; /* Example button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .dish-card .add-to-cart:hover {
+    background-color: #e69138; /* Darker shade on hover */
+  }
+  
+  /* Basic styling for the star icon */
+  .star {
+    font-family: sans-serif; /* Ensure star renders correctly */
+  }
+
+/*healthy-food section*/
+.healthy-food-section{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #fffefe;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.food-image-container{
+    flex: 0 0 40%;
+    margin-right: 30px;
+}
+
+.food-image-container img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.food-content {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.food-content h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.food-content p{
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.explore-button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+}
+
+.explore-button:hover{
+    background-color: #e8840ae0;
+}
+
+
+/*food-ordering section*/
+.section__container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.banner__card {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  border: 0px soild black;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Icon Style */
+.banner__icon {
+  font-size: 2.5rem;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #f0f0f0; /* default fallback */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Colored Backgrounds */
+.icon-order {
+  background-color: #ffe5e0; /* Light Tomato */
+  color: #ff6347;
+}
+
+.icon-pick {
+  background-color: #e0f0ff; /* Light Blue */
+  color: #1e90ff;
+}
+
+.icon-enjoy {
+  background-color: #e0ffe0; /* Light Green */
+  color: #32cd32;
+}
+
+
+
+.banner__card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.banner__card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.banner__card a {
+  font-weight: 500;
+  color: #ff6347;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.banner__card a:hover {
+  color: #e5533d;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+}
+
+.banner__card a span {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+  /* Chef Section Container */
+  #chef-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #fff;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .chef-content {
+    flex: 1;
+    max-width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin-left: 80px;
+  }
+  
+  .chef-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+  }
+  
+  .chef-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+  
+  .chef-features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .chef-features li {
+    font-size: 1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .icon {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .icon.green {
+    color: #4CAF50;
+  }
+  
+  .icon.red {
+    color: #F44336;
+  }
+  
+  .icon.blue {
+    color: #2196F3;
+  }
+  
+  .chef-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: -50px;
+  }
+  
+  .chef-circle {
+    width: 320px;
+    height: 320px;
+    background-color: #ff7b00;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chef-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  
+  .spices-decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    margin-left: -2px;
+    top: 1;
+  }
+
+/*client-section*/
+#client-testimonials {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-description {
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden; /* To contain the slides */
+}
+
+.testimonial-slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.testimonial-card {
+  padding: 30px;
+  border: 1px solid #fd9a18; /* Lighter border */
+  border-radius: 8px; /* Slightly less rounded */
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  margin: 0 10px; /* Add some spacing between potential multiple visible cards (if adjusted) */
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  line-height: 1.7; /* Improved readability */
+  margin-bottom: 20px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.customer-avatar {
+  width: 40px; /* Slightly smaller avatar */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer-details {
+  text-align: left;
+}
+
+.customer-name {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem; /* Slightly larger name */
+}
+
+.customer-title {
+  display: block;
+  color: #777;
+  font-size: 0.85rem; /* Slightly smaller title */
+}
+
+.slider-navigation {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-navigation button.dot {
+  width: 12px; /* Slightly larger dots */
+  height: 12px;
+  border-radius: 50%; /* Ensures perfect circle */
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0; /* Remove default button padding */
+  margin: 0; /* Reset default margins */
+  outline: none; /* Remove focus outline */
+}
+
+.slider-navigation button.dot.active {
+  background-color: #ff9800; /* Or your primary color */
+}
+
+/*footer-section*/
+footer {
+  background-color: #f8f8f8; /* Light background */
+  padding: 50px 20px;
+  font-family: sans-serif;
+}
+
+#footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+  gap: 30px;
+  align-items: start; /* Align top of columns */
+}
+
+.footer-col {
+  margin-bottom: 30px;
+}
+
+.logo {
+  color: #333; /* Dark text */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ff9800; /* Orange accent */
+}
+
+.company-info p {
+  color: #777; /* Gray text */
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.footer-col h3 {
+  color: #333; /* Dark heading */
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color: #555; /* Darker gray link */
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ff9800; /* Orange hover */
+}
+
+.footer-bar {
+  margin-top: 40px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #f8f8f8;
+  text-align: center;
+  color:black;
+  font-size: 0.8rem;
+  border: none;
+}
+
+/* Add this to your food.css */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust as needed */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style adjustments for the slider (optional, depending on your existing styles) */
+.testimonial-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-slide {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slider-navigation .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.slider-navigation .dot.active {
+  background-color: #ff8c00; /* Or your primary color */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .company-info {
+    text-align: left; /* Align text left in the first column on smaller screens */
+  }
+}
