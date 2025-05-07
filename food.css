@@ -666,18 +666,193 @@ footer {
 .slider-navigation .dot.active {
   background-color: #ff8c00; /* Or your primary color */
 }
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+/* === Base Reset for Consistent Spacing === */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Small Devices (Mobile: up to 600px) === */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
     text-align: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .dish-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .healthy-food-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food-image-container,
+  .food-content {
+    width: 100%;
+  }
+
+  .section__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #chef-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chef-content {
+    width: 100%;
+  }
+
+  .chef-image-container {
+    margin: 20px 0;
+  }
+
+  .testimonial-slider {
+    flex-direction: column;
   }
 
   .footer-col {
-    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .company-info {
-    text-align: left; /* Align text left in the first column on smaller screens */
+  #footer-container {
+    flex-direction: column;
+  }
+}
+
+/* === Medium Devices (Tablet: 601px to 991px) === */
+@media (min-width: 601px) and (max-width: 991px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 50%;
+  }
+
+  .dish-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .dish-card {
+    width: 45%;
+  }
+
+  .healthy-food-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .section__container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #chef-section {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-col {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  #footer-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* === Large Devices (Desktop: 992px and up) === */
+@media (min-width: 992px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  #hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .dish-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .healthy-food-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #chef-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-col {
+    width: 22%;
   }
 }
