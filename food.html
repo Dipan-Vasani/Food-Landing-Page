@@ -16,9 +16,9 @@
         </div>
         <ul>
              <li><a href="#hero">Home</a></li>
-             <li><a href="#special-dish-section">Special</a></li>
+             <li><a href="#menu">Special</a></li>
              <li><a href="#chef-section">Chef</a></li>
-             <li><a href="#client-testimonials">Clients</a></li>
+             <li><a href="#testimonial-section">Clients</a></li>
              <li><a href="#footer-container">Contact Us</a></li>
         </ul>
         <div style="background-color: #ff8c00; border-radius: 50%; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">
@@ -40,8 +40,10 @@
       </section>
 
       <!--food-section -->
-      <section id="special-dish-section">
-        <h2>Our Special Dish</h2>
+      <section id="menu" class="menu-section">
+        <div class="fade-in">
+          <h2 class="section-title">Our Menu</h2>
+      </div>
         <p class="section-description">Each dish promises an unforgettable dining experience, blending innovation with tradition to delight your senses.</p>
         <div class="dish-container">
           <div class="dish-card">
@@ -171,70 +173,55 @@
     </section>
 
     <!--client-section-->
-    <section id="client-testimonials">
+    <section id="testimonial-section">
       <h2>What Our Customers Are Saying</h2>
-      <p class="section-description">
-        Discover firsthand experiences and testimonials from our valued patrons.
-        Explore the feedback and reviews that showcase our commitment to
-        quality, service, and customer satisfaction.
-      </p>
+      <p>Discover firsthand experiences and testimonials...</p>
     
-      <div class="testimonial-slider">
-        <div class="testimonial-slide active">
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              FoodMan's culinary expertise never fails to impress! Every dish is a masterpiece,
-              bursting with flavor and freshness.
-            </p>
-            <div class="customer-info">
-              <img src="image/client-1.jpg" alt="David Lee" class="customer-avatar">
-              <div class="customer-details">
-                <strong class="customer-name">David Lee</strong>
-                <span class="customer-title">Business Executive</span>
-              </div>
+      <div class="testimonial-carousel">
+        <!-- Slide 1 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">The service at FoodMan is exceptional...</p>
+          <div class="testimonial-author">
+            <img src="image/client-1.jpg" alt="Sarah" class="author-img">
+            <div>
+              <strong>Sarah Miller</strong><br>
+              <span>Marketing Manager</span>
             </div>
           </div>
         </div>
     
-        <div class="testimonial-slide">
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              The service at FoodMan is exceptional. The staff is attentive and makes you
-              feel truly valued. And the food? Absolutely delicious!
-            </p>
-            <div class="customer-info">
-              <img src="image/client-2.jpg" alt="Sarah Miller" class="customer-avatar">
-              <div class="customer-details">
-                <strong class="customer-name">Sarah Miller</strong>
-                <span class="customer-title">Marketing Manager</span>
-              </div>
+        <!-- Slide 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">I highly recommend FoodMan...</p>
+          <div class="testimonial-author">
+            <img src="image/client-2.jpg" alt="John" class="author-img">
+            <div>
+              <strong>John Davis</strong><br>
+              <span>Software Engineer</span>
             </div>
           </div>
         </div>
     
-        <div class="testimonial-slide">
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              I highly recommend FoodMan for any occasion. Their menu offers a fantastic
-              variety, and the quality is consistently outstanding.
-            </p>
-            <div class="customer-info">
-              <img src="image/client-3.jpg" alt="John Davis" class="customer-avatar">
-              <div class="customer-details">
-                <strong class="customer-name">John Davis</strong>
-                <span class="customer-title">Software Engineer</span>
-              </div>
+        <!-- Slide 3 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">FoodMan never disappoints...</p>
+          <div class="testimonial-author">
+            <img src="image/client-3.jpg" alt="Emma" class="author-img">
+            <div>
+              <strong>Emma Lee</strong><br>
+              <span>Chef</span>
             </div>
           </div>
         </div>
       </div>
     
-      <div class="slider-navigation">
-        <button class="dot active"></button>
-        <button class="dot"></button>
-        <button class="dot"></button>
+      <div class="testimonial-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </section>
+    
     <!--footer-section-->
     <footer>
       <div id="footer-container">
